@@ -6,10 +6,15 @@
  */
 
 module.exports = {
-
+  schema: true,
   attributes: {
     name: {
-      type: 'string'
+      type: 'string',
+      required: true
+    },
+
+    topics: {
+      collection: 'Topic'
     }
   }
 };
